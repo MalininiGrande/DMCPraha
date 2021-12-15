@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>About us</title>
+
+            <!-- Google Fonts -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Russo+One&display=swap" rel="stylesheet">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Grechen+Fuemen&display=swap" rel="stylesheet"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet"> 
+
+            <!-- Náš vlastní styl -->
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css_glide/glide.core.min.css" />
+            <link rel="stylesheet" href="/css_glide/glide.theme.min.css" />
+
+    </head>
+   
+
+  
+
+
+    <body>
+    
+
+
+        <div class="wrapperone">
+
+
+                    <div class="scroll">
+
+                        {% include 'partials/top_aboutus.njk' %}
+                        {% include 'partials/nav_aboutus.njk' %}
+
+                    </div>
+
+
+            
+            <div class="main__header">
+
+                     <img class="wedgetemplate" src="/logos/wedgetemplate.png" alt="wedge">
+
+
+                    <div class="glidetwo">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                            <div class="glide__slides--a">
+                            <li class="glide__slidea"><img src="/images/topheader/ancient.jpg" alt="Ancient Prague"></li>
+                            <p>Inbound travel agency with 20+ years of experience</p></div>
+                            <div class="glide__slides--b">
+                            <li class="glide__slidea"><img src="/images/topheader/ceskykrumlov.jpg" alt="Cesky Krumlov"></li>
+                            <p>Individual approach to each customer</p></div>
+                            <div class="glide__slides--c">
+                            <li class="glide__slidea"><img src="/images/topheader/hluboka.jpg" alt="Hluboka"></li>
+                            <p>Services in English, Norwegian and Swedish</p></div>
+                            <div class="glide__slides--d">
+                            <li class="glide__slidea"><img src="/images/topheader/pravcice.jpg" alt="Pravcice"></li>
+                            <p>Competitive prices</p></div>
+                            <div class="glide__slides--e">
+                            <li class="glide__slidea"><img src="/images/topheader/vltava.jpg" alt="Vltava"></li>
+                            <p>Only trustworthy suppliers and licensed guides</p></div>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                            <button class="glide__bullet" data-glide-dir="=3"></button>
+                            <button class="glide__bullet" data-glide-dir="=4"></button>
+                        </div>
+
+                        
+                    </div>
+            </div> 
+                                
+            {{ content | safe }}
+
+                                            
+                                {% include 'partials/newsletter_aboutus.njk' %}
+
+
+                                {% include 'partials/footer_aboutus.njk' %}
+
+                                            
+                                {% include 'partials/copywright_aboutus.njk' %}
+
+            
+        
+
+                                <script src="/js/glide.min.js"></script>
+
+                                <script>
+                                new Glide('.glide', {
+                            autoplay: 4000,
+                            hoverpause: false,
+                            type:'carousel',
+                            animationDuration: 2000,
+
+                                }).mount()
+                                </script>
+         </div>             
+    
+    </body>
+</html>
