@@ -2142,7 +2142,7 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 799px) {
   .wrapper {
-    grid-template-rows: 300px 50px 570px 1200px 650px 1150px 1000px 350px 350px 25px;
+    grid-template-rows: 300px 50px 400px 1250px 950px 1750px 1650px 350px 650px 25px;
   }
 
   .top {
@@ -2179,10 +2179,10 @@ body {
     font-weight: bold;
     padding-right: 5px;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     background-color: #14213D;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 15px;
     cursor: pointer;
   }
@@ -2219,5 +2219,582 @@ body {
 
   .nav a:hover {
     color: #FCA311;
+  }
+
+  .glide {
+    position: relative;
+  }
+
+  .glide__bullets {
+    position: absolute;
+    top: 670px;
+  }
+
+  .glide__slide img {
+    opacity: 0.8;
+    z-index: -1;
+    max-width: 800px;
+    height: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .newsletter-text p {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+
+  .newsletter-subscribe {
+    margin-top: 5px;
+  }
+
+  .header__main {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    border-radius: 29px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 450px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+  }
+
+  .header__main--text--italic {
+    font-style: italic;
+    font-weight: normal;
+    display: none;
+  }
+
+  .footer {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .footer__logo_policy {
+    padding-top: 5px;
+  }
+
+  .footer__logo_policy-text {
+    margin-top: 80px;
+  }
+
+  .footer__contact--filip {
+    padding-left: 40px;
+  }
+
+  .whoweare {
+    margin-top: 0px;
+  }
+
+  .wedge_four {
+    position: absolute;
+    left: -30px;
+    min-width: 1200px;
+    height: 149px;
+    top: -50px;
+  }
+
+  .whoweare__photos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .whoweare__photos img {
+    width: 100%;
+    min-width: 450px;
+    max-width: 401px;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 5px;
+    margin: 15px;
+  }
+
+  .whoweare__photos--marcela p {
+    bottom: 15px;
+    left: 15px;
+    font-size: 25px;
+  }
+
+  .whoweare__photos--filip p {
+    bottom: 15px;
+    left: 15px;
+    font-size: 25px;
+  }
+
+  .whoweare__heading h3:after {
+    display: block;
+    position: absolute;
+    background-color: #FCA311;
+    width: 385px;
+    height: 6px;
+    content: "";
+    margin-top: 10px;
+    left: -45px;
+  }
+
+  .services__main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+  }
+
+  .services__left img {
+    text-align: center;
+    padding-left: 65px;
+    padding-top: 40px;
+  }
+
+  .services__right--list {
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-top: 0;
+  }
+
+  .services__heading p {
+    margin-bottom: 0;
+  }
+
+  .services__heading {
+    margin-top: 20px;
+  }
+
+  .services__button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    bottom: 35%;
+  }
+
+  .services__right--list {
+    padding-top: 5px;
+  }
+
+  .destinations {
+    padding-left: 40px;
+    padding-right: 45px;
+    display: flex;
+    background-color: #eaeaea;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  .destinations__text {
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+
+  .destinations__text p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 27px;
+  }
+
+  .destinations-rowone-second, .destinations-rowtwo-fourth {
+    padding-left: 0;
+  }
+
+  .destinations__button {
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .destinations--rowtwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+
+  .destinations--rowone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .destinations-rowone-second, .destinations-rowtwo-fourth {
+    margin-left: 0px;
+  }
+
+  .golf__wrapping {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .golf__heading h3 {
+    margin-top: 0;
+  }
+
+  .golf__heading p {
+    margin-bottom: 0;
+  }
+
+  .golf__button {
+    margin-left: 120px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .golf--right {
+    display: block;
+  }
+
+  .golf--rowone--third, .golf--rowone--fourth {
+    margin-left: 0px;
+  }
+
+  .golf--rowone--first, golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
+    display: block;
+  }
+
+  .golf--rowone img, .golf--rowtwo img {
+    width: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 479px) {
+  .wrapper {
+    grid-template-rows: 300px 50px 400px 1250px 950px 1750px 1650px 350px 650px 25px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .top__dmc:hover {
+    transform: scale(0.8, 0.8);
+    transition: transform 1s ease;
+  }
+
+  .top__dmc {
+    position: absolute;
+    top: 10%;
+    left: 57%;
+  }
+
+  .top__dmc img {
+    width: 200px;
+  }
+
+  .top__logos {
+    margin-left: 11px;
+  }
+
+  .menu__toggler {
+    display: block;
+    font-weight: bold;
+    padding-right: 5px;
+    color: white;
+    font-size: 22px;
+    background-color: #14213D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+
+  .nav__main {
+    display: none;
+    padding-left: 0;
+  }
+
+  .nav__main div {
+    background-color: #14213D;
+    font-style: normal;
+    display: block;
+  }
+
+  .nav__about-us, .nav__services, .nav__destinations, .nav__golf, .nav__references, .nav__contact-us {
+    border-bottom: 1px solid white;
+  }
+
+  .nav__main .nav__pomlcka {
+    display: none;
+  }
+
+  .menu__checkbox:checked ~ .nav__main {
+    display: block;
+  }
+
+  .nav__main a {
+    background-color: #14213D;
+    display: block;
+    font-weight: normal;
+    padding: 15px;
+  }
+
+  .nav a:hover {
+    color: #FCA311;
+  }
+
+  .glide {
+    position: relative;
+  }
+
+  .glide__bullets {
+    position: absolute;
+    top: 670px;
+  }
+
+  .glide__slide img {
+    opacity: 0.8;
+    z-index: -1;
+    max-width: 800px;
+    height: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .newsletter-text p {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+
+  .newsletter-subscribe {
+    margin-top: 5px;
+  }
+
+  .header__main {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    border-radius: 29px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 450px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+  }
+
+  .header__main--text--italic {
+    font-style: italic;
+    font-weight: normal;
+    display: none;
+  }
+
+  .footer {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .footer__logo_policy {
+    padding-top: 5px;
+  }
+
+  .footer__logo_policy-text {
+    margin-top: 80px;
+  }
+
+  .footer__contact--filip {
+    padding-left: 40px;
+  }
+
+  .whoweare {
+    margin-top: 0px;
+  }
+
+  .wedge_four {
+    position: absolute;
+    left: -30px;
+    min-width: 1200px;
+    height: 149px;
+    top: -50px;
+  }
+
+  .whoweare__photos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .whoweare__photos img {
+    width: 100%;
+    min-width: 450px;
+    max-width: 401px;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 5px;
+    margin: 15px;
+  }
+
+  .whoweare__photos--marcela p {
+    bottom: 15px;
+    left: 15px;
+    font-size: 25px;
+  }
+
+  .whoweare__photos--filip p {
+    bottom: 15px;
+    left: 15px;
+    font-size: 25px;
+  }
+
+  .whoweare__heading h3:after {
+    display: block;
+    position: absolute;
+    background-color: #FCA311;
+    width: 385px;
+    height: 6px;
+    content: "";
+    margin-top: 10px;
+    left: -45px;
+  }
+
+  .services__main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+  }
+
+  .services__left img {
+    text-align: center;
+    padding-left: 65px;
+    padding-top: 40px;
+  }
+
+  .services__right--list {
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-top: 0;
+  }
+
+  .services__heading p {
+    margin-bottom: 0;
+  }
+
+  .services__heading {
+    margin-top: 20px;
+  }
+
+  .services__button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    bottom: 35%;
+  }
+
+  .services__right--list {
+    padding-top: 5px;
+  }
+
+  .destinations {
+    padding-left: 40px;
+    padding-right: 45px;
+    display: flex;
+    background-color: #eaeaea;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  .destinations__text {
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+
+  .destinations__text p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 27px;
+  }
+
+  .destinations-rowone-second, .destinations-rowtwo-fourth {
+    padding-left: 0;
+  }
+
+  .destinations__button {
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .destinations--rowtwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+
+  .destinations--rowone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .destinations-rowone-second, .destinations-rowtwo-fourth {
+    margin-left: 0px;
+  }
+
+  .golf__wrapping {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .golf__heading h3 {
+    margin-top: 0;
+  }
+
+  .golf__heading p {
+    margin-bottom: 0;
+  }
+
+  .golf__button {
+    margin-left: 120px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .golf--right {
+    display: block;
+  }
+
+  .golf--rowone--third, .golf--rowone--fourth {
+    margin-left: 0px;
+  }
+
+  .golf--rowone--first, golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
+    display: block;
+  }
+
+  .golf--rowone img, .golf--rowtwo img {
+    width: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=style.css.map */

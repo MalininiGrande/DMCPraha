@@ -2340,7 +2340,7 @@ padding-left: 40px;
 @media screen and (min-width: 480px) and (max-width: 799px) {
 
   .wrapper {
-    grid-template-rows: 300px 50px 570px 1200px 650px 1150px 1000px 350px 350px 25px;
+    grid-template-rows: 300px 50px 400px 1250px 950px 1750px 1650px 350px 650px 25px;
   }
 
 
@@ -2383,10 +2383,10 @@ padding-left: 40px;
   font-weight: bold;
   padding-right: 5px;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   background-color: $primary;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px;
   cursor: pointer;
 }
@@ -2427,8 +2427,291 @@ padding-left: 40px;
   color: $button;
 }
 
+.glide {
+  position: relative;
+}
+
+.glide__bullets {
+  position: absolute;
+  top: 670px;
+}
 
 
+.glide__slide img {
+  opacity: 0.8;
+  z-index: -1;
+  max-width: 800px;
+  height: 700px;
+  object-fit: cover;
+}
+
+
+.newsletter-text p {
+  padding-top: 30px;
+  font-size: 16px;
+  }
+  
+  
+  .newsletter-subscribe {
+  margin-top: 5px;
+  }
+  
+
+
+  .header__main {
+    background-color: rgba(255,255,255, 0.8);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    border-radius: 29px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 450px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+  }
+  
+  
+  
+  .header__main--text--italic {
+    font-style: italic;
+    font-weight: normal;
+    display: none;
+  }
+  
+  
+
+
+.footer {
+ 
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+  
+  .footer__logo_policy {
+  padding-top: 5px;
+  }
+  
+  
+  .footer__logo_policy-text {
+  margin-top: 80px;
+  }
+  
+  
+  .footer__contact--filip {
+  padding-left: 40px;
+  }
+  
+  .whoweare {
+    margin-top: 0px;
+  
+  }
+  
+  .wedge_four {
+    position: absolute;
+    left: -30px;
+    min-width: 1200px;
+    height: 149px;
+    top: -50px;
+  }
+  
+  
+  .whoweare__photos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .whoweare__photos img{
+    width: 100%;
+    min-width: 450px;
+    max-width: 401px;
+    max-height: 300px;
+    object-fit: cover;
+    padding: 5px;
+    margin: 15px;
+  }
+  
+  
+  .whoweare__photos--marcela p {
+   
+   bottom: 15px;
+   left: 15px;
+   font-size: 25px;
+  }
+  .whoweare__photos--filip p {
+   
+   bottom: 15px;
+   left: 15px;
+   font-size: 25px;
+  }
+  
+  
+  .whoweare__heading h3:after {
+    display: block;
+    position: absolute;
+    background-color: $button;
+    width: 385px;
+    height: 6px;
+    content: "";
+    margin-top: 10px;
+   left: -45px;
+  }
+  
+  
+  .services__main {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: left;
+    }
+  
+  
+  .services__left img {
+    text-align: center;
+    padding-left: 65px;
+    padding-top: 40px;
+  }
+  
+  
+  .services__right--list {
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-top: 0;
+  }
+  
+  .services__heading p {
+    margin-bottom: 0;
+  }
+  
+  .services__heading {
+    margin-top: 20px;
+  }
+  
+  .services__button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    bottom: 35%;
+  
+  }
+  
+  .services__right--list {
+    padding-top: 5px;
+    }
+  
+  
+  .destinations {
+    padding-left: 40px;
+    padding-right: 45px;
+    display: flex;
+    background-color: $background;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  
+  
+  .destinations__text {
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+  
+  .destinations__text p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 27px;
+  }
+  
+
+.destinations-rowone-second, .destinations-rowtwo-fourth {
+  padding-left: 0;
+}
+
+  
+  .destinations__button {
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .destinations--rowtwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  
+  .destinations--rowone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  .destinations-rowone-second, .destinations-rowtwo-fourth {
+    margin-left: 0px;
+  }
+
+
+
+
+
+
+
+
+    .golf__wrapping {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .golf__heading h3 {
+    margin-top: 0;
+  }
+  
+  .golf__heading p {
+    margin-bottom: 0;
+  }
+  
+    .golf__button {
+      margin-left:120px;
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+  
+
+    .golf--right {
+      display: block;
+    }
+
+
+      .golf--rowone--third, .golf--rowone--fourth {
+    margin-left: 0px;
+  }
+
+
+.golf--rowone--first, golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
+  display: block;
+}
+
+
+
+  .golf--rowone img, .golf--rowtwo img {
+    width: 400px;
+    object-fit: cover;
+  }
 
 
 }
@@ -2439,900 +2722,388 @@ padding-left: 40px;
 
 
 
-
-
-
-// .nav__about-us:hover:after {
-//   display: block;
-//   background-color: $button;
-//   width: 88px;
-//   height: 4px;
-//   content: "";
-// margin-top: 11px;}
-
-// .nav__services:hover:after {
-//   display: block;
-//   background-color: $button;
-//   width: 84px;
-//   height: 4px;
-//   content: "";
-// margin-top: 11px;}
-
-// .nav__destinations:hover:after {
-//   display: block;
-//   background-color: $button;
-//   width: 127px;
-//   height: 4px;
-//   content: "";
-// margin-top: 11px;}
-
-// .nav__golf:hover:after {
-//   display: block;
-//   background-color: $button;
-//   width: 46px;
-//   height: 4px;
-//   content: "";
-// margin-top: 11px;}
-
-// .nav__references:hover:after {
-//   display: block;
-//   background-color: $button;
-//   width: 114px;
-//   height: 4px;
-//   content: "";
-// margin-top: 11px;}
-
-// .nav__contact-us:hover:after {
-//   display: block;
-//   background-color: $button;
-//   width: 108px;
-//   height: 4px;
-//   content: "";
-// margin-top: 11px;}
-
-
-// // konec nav
-
-
-
-
-// // NORSK
-// .header__norsk a {
-//   text-decoration: none;
-//   color: black;
-//   // font-family: $font-serif;
-//   float: left;
-//   padding-top: 10px;
-//   padding-right: 5px;
-//   padding-left: 4px;
-//   font-size: 16px;
-// }
-
-// .header__norsk a:hover {
-//   font-size: 16px;
-//   cursor: pointer;
-//   text-decoration: underline;
-// }
-
-// .header__norsk--image {
-//   float: left;
-//   padding-top: 13px;
-//   padding-right: 5px;
-//   padding-left: 10px;
-//   margin: auto;
-// }
-
-// .header__norsk {
-//   background-color: rgba(255,255,255, 0.3);
-//   position: absolute;
-//   z-index: 1;
-// bottom: 0px;
-// right: 7px;
-// text-align: center;
-// display: block;
-// width: 105px;
-// height: 45px;
-// border-radius: 5px;
-// }
-//   // konec NORSK
-//   // nastaveni glide
-
-
-// .glide__slide img {
-//   opacity: 0.8;
-//   z-index: -1;
-//   width: 100%;
-//   height: 750px;
-//   object-fit: cover;
-// }
-
-// .header {
-//   width: 100%;
-//   position: relative;
-// }
-
-// .glide__slides {
-//   margin: 0;
-// }
-
-// .header__main {
-//   background-color: rgba(255,255,255, 0.8);
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -45%);
-//   border-radius: 29px;
-//   padding: 20px;
-//   display: block;
-//   text-align: center;
-//   width: 600px;
-//   line-height: 1.5;
-//   font-size: 18px;
-//   font-family: 'Montserrat', sans-serif;
-//   color: black;
-// }
-
-// // .header__main--text p {
-// //   text-align: justify;
-// // }
-
-
-// .header__main--text span {
-//   font-size: 22px;
-// }
-
-// .header__main--text--italic {
-//   font-style: italic;
-//   font-weight: normal;
-// }
-
-// .header__main--button {
-//   font-size: 18px;
-//   padding: 10px;
-//   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
-//    cursor: pointer;
-// // border: 1px solid green;
-// background-color: $primary;
-// display:inline-block;
-// border-radius: 29px;
-// }
-
-// .header__main--button a {
-//   text-decoration: none;
-//   color: white;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
-
-
-// .header__main--button:hover {
-//   background-color: $button;
-//   transition: background-color 0.4s ease-in;
-// }
-
-//   // konec nastaveni glide
-
-
-
-
-// // NEWSLETTER
-
-// .newsletter {
-//   background-color: white;
-//   color: white;
-//   padding: 15px;
-//   position: relative;
-//   background-image: url("/logos/horizontal.png");
-//   background-size: 100% 350px;
-//   background-position: center;
-//   z-index: 5;
-// }
-
-
-// .newsletter-text {
-//   text-align: right;
-//   margin-right: 15px;
-//   margin-top: 20px;
-
-// }
-
-// .newsletter-text p {
-//   padding-top: 14px;
-// }
-
-// .newsletter-subscribe {
-//   text-align: right;
-//   margin-top: 20px;
-// }
-
-
-// .newsletter-text h5 {
-//   font-size: 18px;
-//   text-transform: uppercase;
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
-
-// .newsletter-subscribe button {
-//   font-family: $font-modern;
-//   color: white;
-//   font-size: 17px;
-//   margin-top: 10px;
-//   background-color: $button;
-//   border-radius: 29px;
-//   border: none;
-//   padding:10px;
-//   text-transform: uppercase;
-//   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
-//    cursor: pointer;
-// }
-
-
-// .newsletter-subscribe button:hover {
-//   background-color: $primary;
-//   transition: background-color 0.4s ease-in;}
-
-
-//   .newsletter-text h5:after {
-//     display: block;
-//     background-color: $button;
-//     width: 154px;
-//     height: 6px;
-//     content: "";
-//     margin-top: 10px;
-//     position: absolute;
-//     right: 0;
-//   }
-
-// // CONTACT
-
-// .footer {
- 
-//   margin-bottom: 10px;
-//   margin-left: 15px;
-//   margin-right: 15px;
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .footer__contact {
-//   text-align: right;
-//   padding-right: 15px;
-// }
-
-// .footer__contact p{
-// margin: 0;line-height: 1.5;
-// }
-
-
-// .footer__logo_policy {
-//   position: relative;
-//   padding-left: 20px;
-//   padding-top: 20px;
-// }
-
-// .footer__logo_policy-text {
-//   margin-top: 90px;
-// }
-
-// .footer__contact h5{
-//   margin: 0;
-//   font-family: $font-modern;
-//   font-size: 18px;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   }
-
-// .footer__logo_policy-logo {
-//   padding-top: 10px;
-//   display: block;
-//   position: absolute;
-//   left: 20px; 
-// }
-
-// .footer__contact, .footer__logo_policy {
-//   flex: 1 0 50%;
-// }
-
-// .footer__contact a {
-//   text-decoration: none;
-//   color: #171717;
-// }
-
-
-// .footer__contact h5:after {
-//   display: block;
-//   position: absolute;
-//   background-color: $button;
-//   width: 252px;
-//   height: 6px;
-//   content: "";
-//   margin-top: 10px;
-//  right: 0px;
-// }
-
-// // .footer__contact--English {
-// //   padding-left: 68px;
-// // }
-
-// .footer__contact--filip {
-//   padding-left: 90px;
-// }
-
-
-// .footer__contact--bold {
-//   font-weight: bold;
-// }
-
-// .footer__contact a:hover {
-//   font-weight: bold;
-// }
-
-// // COPYWRIGHT
-
-// .copywright {
-//   background-color: $primary;
-//   color: white;
-//   text-align: center;
-//   font-size: 14px;
-//   position: relative;
-
-// }
-
-// .copywright p {
-//   margin-top: 3px;
-//   margin-bottom: 0;
-// }
-
-// .wedge_three{
-//   position: absolute;
-//   z-index: -1;
-//   left: 0px;
-//   width: 100%;
-//   height: 149px;
-//   top: -149px;
-// }
-
-
-// // WHO WE ARE
-
-
-// .whoweare {
-//   margin-right: 15px;
-//   margin-left: 40px;
-//   margin-top: 60px;
-//   position: relative;
-// }
-
-
-// .wedge_four {
-//   position: absolute;
-//   left: 15px;
-//   width: 100%;
-//   height: 149px;
-//   top: -62px;
-// }
-
-// .whoweare__heading {
-//   font-size: 40px;
-//   text-transform: uppercase;
-// }
-
-
-
-// .whoweare__main {
-//   flex: 0 1 850px;
-// }
-
-
-// .whoweare__text--left p{
-//   padding-bottom: 20px;
-//   line-height: 1.5;
-// }
-
-// .whoweare__photos {
-//   display: flex;
-//   width: 100%;
-//   justify-content: space-between;
-//   align-items: center;
-//   margin: 0 auto;
-// }
-
-
-// .whoweare__photos img{
-//   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-//   width: 100%;
-//   max-width: 450px;
-//   max-height: 300px;
-//   object-fit: cover;
-// }
-
-// .whoweare__photos--filip, .whoweare__photos--marcela, .whoweare__text--button {
-//   flex: 1 0 33.33%;
-//   display: flex;
-//   justify-content: center;
-// align-items: center;
-// align-items: center;
-// }
-
-// .whoweare__text--button {
-//   margin-left: 10px;
-//   margin-right: 10px;
-// }
-
-
-// .whoweare__text--button a:hover {
-//   background-color: $button;
-//   transition: background-color 0.4s ease-in;
-// }
-
-// .whoweare__text--button a {
-//   font-size: 26px;
-// padding-top: 10px;  
-// padding-bottom: 10px;
-// padding-left: 50px;
-// padding-right: 50px;
-// text-transform: uppercase;
-// box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
-//    cursor: pointer;
-// background-color: $primary;
-// border-radius: 29px;
-// color: white;
-// text-decoration: none;
-// display: inline-block;
-
-// }
-
-// .whoweare__photos--marcela--content, .whoweare__photos--filip--content {
-//   position: relative;
-// }
-
-// .whoweare__photos--marcela p {
-//  background-color: $primary; 
-//  color: white;
-//  display: inline-block;
-//  padding: 10px;
-//  position: absolute;
-//  bottom: 0px;
-//  left: 0px;
-//  font-size: 20px;
-// }
-
-// .whoweare__photos--filip p {
-//   background-color: $primary; 
-//   color: white;
-//   display: inline-block;
-//   padding: 10px;
-//   position: absolute;
-//   bottom: 0;
-//   left: 0px;
-//   font-size: 20px;
-//  }
- 
-
-
-
-// .whoweare__heading h3:after {
-//   display: block;
-//   position: absolute;
-//   background-color: $button;
-//   width: 360px;
-//   height: 6px;
-//   content: "";
-//   margin-top: 10px;
-//  left: -45px;
-// }
-
-// .whoweare__photos {
-//   display: flex;
-// }
-
-// .whoweare__photos--marcela, .whoweare__text--button, .whoweare__photos--filip {
-//   flex: 1 1 33%;
-//   position: relative;
-// }
-
-
-
-// // WHO WE ARE END
-
-
-
-// // SERVICES
-
-// .services {
-//   background-color: $primary;
-//   color: white;
-// padding-left: 40px;
-//   position: relative;
-// }
-
-// .services__heading {
-// font-size: 40px;
-// text-transform: uppercase;
-// text-align: right;
-// position: absolute;
-// top: -80px;
-// right: 300px;
-
-// }
-
-
-// .services__left img {
-//   margin-top: 57px;
-// }
-
-// .services__heading h3 {
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   position: absolute;
-//   }
-
-// .services__heading h3:after {
-//   display: block;
-//   position: absolute;
-//   background-color: $button;
-//   width: 300px;
-//   height: 6px;
-//   content: "";
-//   margin-top: 10px;
-//  right: -60px;
-// }
-
-
-// .services__main {
-//   display: flex;
-// }
-
-// .services__button {
-//   display: flex;
-//   justify-content: center;
-//   position: absolute;
-//   left: 500px;
-//   bottom: 172px;
-// }
-
-
-// .services__button a:hover {
-//   background-color: $primary;
-//   transition: background-color 0.4s ease-in;
-// }
-// .services__right--list {
-//   padding-left: 500px;
-// }
-
-// .services__button a {
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   font-size: 26px;
-// text-transform: uppercase;
-// box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
-//    cursor: pointer;
-// background-color: $button;
-// border-radius: 29px;
-// color: white;
-// text-decoration: none;
-// display: inline-block;
-// }
-
-// .services__right p {
-//   margin-top: 0;
-// }
-
-// .services__right {
-//   margin-right: 45px;
-//   margin-left: 60px;
-//   line-height: 1.5;
-//   margin-top: 53px;
-// }
-
-
-
-// .wedge {
-//   position: absolute;
-//   left: 0px;
-//   width: 100%;
-//   height: 149px;
-//   top: -149px;
-// }
-
-
-// // SERVICES END
-
-
-
-// // DESTINATIONS
-
-// .destinations {
-//   padding-left: 40px;
-//   padding-right: 45px;
-//   display: flex;
-//   background-color: $background;
-//   position: relative;
-
-// }
-
-// .destinations__heading {
-// font-size: 40px;
-// text-transform: uppercase;
-// text-align: right;
-// position: absolute;
-//   top: -40px;
-//   right: 50px;
-//   padding-top: 80px;
-// }
-
-// .destinations__heading h3 {
-//   margin-top: 0;
-//     margin-bottom: 0;
-//   }
-
-
-
-// .destinations__text {
-//   padding-left: 25px;
-//   padding-top: 20px;
-//   padding-top: 140px;
-// }
-
-// .destinations__text p {
-//   font-size: 18px;
-//   font-weight: bold;
-//   padding-left: 27px;
-// }
-
-
-// .destinations__heading:after {
-//   display: block;
-//   position: absolute;
-//   background-color: $button;
-//   width: 405px;
-//   height: 6px;
-//   content: "";
-//   margin-top: 20px;
-//  right: -45px;
-// }
-
-// .destinations--rowone {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .destinations--rowtwo {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .destinations-rowone-first, .destinations-rowone-second, .destinations-rowtwo-third, .destinations-rowtwo-fourth {
-//   position: relative;
-// }
-
-// .destinations-rowone-first p, .destinations-rowone-second p, .destinations-rowtwo-third p, .destinations-rowtwo-fourth p {
-//   position: absolute;
-//   background-color: rgba(20,33,61, 0.9);
-//   color: white;
-//   font-size: 18px;
-//   padding: 10px;
-//   left: 0;
-//   top: 170px;
-// }
-
-// .destinations-rowone-first p:hover, .destinations-rowone-second p:hover, .destinations-rowtwo-third p:hover, .destinations-rowtwo-fourth p:hover {
-//   background-color: $button;
-//   cursor: pointer;
-//   transition: background-color 0.4s ease-in;
-// }
-
-// .destinations__button {
-//   margin-left: 205px;
-//   margin-top: 70px;
-// }
-
-// .destinations__button a {
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-//     padding-right: 15px;
-//     padding-left: 15px;
-//     font-size: 26px;
-//   text-transform: uppercase;
-//   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
-//      cursor: pointer;
-//   background-color: $primary;
-//   border-radius: 29px;
-//   color: white;
-//   text-decoration: none;
-//   display: inline-block;
-// }
-
-// .destinations__button a:hover {
-//   background-color: $button;
-//   transition: background-color 0.4s ease-in;
-// }
-
-// .destinations-rowone-second, .destinations-rowtwo-fourth {
-//   margin-left: 5px;
-// }
-
-// .destinations--rowone img, .destinations--rowtwo img {
-//   width: 100%;
-//   object-fit: cover;
-//   max-width: 400px;
-// }
-
-// // .destinations-rowone-second {
-// //   max-width: 400px;
-// // }
-
-// .destinations__text {
-//   line-height: 1.5;
-// }
-
-// // DESTINATIONS END
-
-// // GOLF
-
-// .golf {
-//   padding-left: 40px;
-//   position: relative;
-//   padding-right: 25px;
-//   }
-
-//   .golf__heading {
-//     font-size: 40px;
-// text-transform: uppercase;
-// position: relative;
-//   }
-
-//   .golf__wrapping {
-//     display: flex;
-//   }
-
-//   .golf--right {
-//     display: flex;
-//   }
-
-//   .golf__heading:after {
-//     display: block;
-//     position: absolute;
-//     background-color: $button;
-//     width: 175px;
-//     height: 6px;
-//     content: "";
-//     margin-top: -35px;
-//    left: -45px;
-//   }
-
-//   .white-wedge {
-//     position: absolute;
-//   left: 0px;
-//   width: 100%;
-//   height: 149px;
-//   top: -149px
-//   }
-
-//   .golf__button {
-//     margin-left:200px;
-//   }
-
-//   .golf__button a:hover {
-//     background-color: $button;
-//     transition: background-color 0.4s ease-in;
-//   }
-  
-//   .golf__button a {
-//     margin-top: 35px;
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-//     padding-right: 25px;
-//     padding-left: 25px;
-//     font-size: 26px;
-//   text-transform: uppercase;
-//   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
-//      cursor: pointer;
-//   background-color: $primary;
-//   border-radius: 29px;
-//   color: white;
-//   text-decoration: none;
-//   display: inline-block;
-//   }
-  
-//   .golf--right {
-//     margin-left: 20px ;
-//   }
-
-//   .golf--rowone--first, .golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
-//     position: relative;
-//   }
-  
-//   .golf--rowone--first p, .golf--rowone--second p, .golf--rowone--third p, .golf--rowone--fourth p {
-//     position: absolute;
-//     background-color: rgba(20,33,61, 0.9);
-//     color: white;
-//     font-size: 18px;
-//     padding: 10px;
-//     left: 0;
-//     top: 170px;
-//   }
-  
-//   .golf--rowone--first p:hover, .golf--rowone--second p:hover, .golf--rowone--third p:hover, .golf--rowone--fourth p:hover {
-//     background-color: $button;
-//     cursor: pointer;
-//     transition: background-color 0.4s ease-in;
-//   }
-
-//   .golf--rowone--third, .golf--rowone--fourth {
-//     margin-left: 5px;
-//   }
-
-//   .golf--rowone img, .golf--rowtwo img {
-//     width: 100%;
-//     object-fit: cover;
-//   }
-
-//   .golf--left {
-//     flex: 1 1 200px;
-//     line-height: 1.5;
-//     margin-top: 15px;
-//   }
-
-
-//   .golf--rowone--first, .golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
-//     max-width: 350px;
-//   }
-// // GOLF END
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   @media screen and (max-width: 479px) {
+  
+
+
+
+  .wrapper {
+    grid-template-rows: 300px 50px 400px 1250px 950px 1750px 1650px 350px 650px 25px;
   }
+
+
+
+.top {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+
+.top__dmc:hover {
+  transform: scale(0.8,0.8);
+  transition: transform 1s ease;
+}
+
+.top__dmc {
+  position: absolute;
+  top: 10%;
+  left: 57%;
+}
+
+
+.top__dmc img {
+ width: 200px;
+}
+
+
+.top__logos {
+  margin-left: 11px;
+}
+
+
+.menu__toggler {
+  display: block;
+  font-weight: bold;
+  padding-right: 5px;
+  color: white;
+  font-size: 22px;
+  background-color: $primary;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+
+.nav__main {
+  display: none;
+  padding-left: 0;
+}
+
+.nav__main div {
+ background-color: $primary;
+ font-style: normal;
+ display: block;
+}
+
+.nav__about-us, .nav__services, .nav__destinations, .nav__golf, .nav__references, .nav__contact-us {
+  border-bottom: 1px solid white;
+}
+
+.nav__main .nav__pomlcka {
+  display: none;
+}
+
+.menu__checkbox:checked ~ .nav__main {
+  display: block;
+}
+
+.nav__main a {
+  background-color: $primary;
+  // padding-left: 5px;
+  display: block;
+  font-weight: normal;
+  padding: 15px
+}
+
+.nav a:hover {
+  color: $button;
+}
+
+.glide {
+  position: relative;
+}
+
+.glide__bullets {
+  position: absolute;
+  top: 670px;
+}
+
+
+.glide__slide img {
+  opacity: 0.8;
+  z-index: -1;
+  max-width: 800px;
+  height: 700px;
+  object-fit: cover;
+}
+
+
+.newsletter-text p {
+  padding-top: 30px;
+  font-size: 16px;
+  }
+  
+  
+  .newsletter-subscribe {
+  margin-top: 5px;
+  }
+  
+
+
+  .header__main {
+    background-color: rgba(255,255,255, 0.8);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    border-radius: 29px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 450px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+  }
+  
+  
+  
+  .header__main--text--italic {
+    font-style: italic;
+    font-weight: normal;
+    display: none;
+  }
+  
+  
+
+
+.footer {
+ 
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+  
+  .footer__logo_policy {
+  padding-top: 5px;
+  }
+  
+  
+  .footer__logo_policy-text {
+  margin-top: 80px;
+  }
+  
+  
+  .footer__contact--filip {
+  padding-left: 40px;
+  }
+  
+  .whoweare {
+    margin-top: 0px;
+  
+  }
+  
+  .wedge_four {
+    position: absolute;
+    left: -30px;
+    min-width: 1200px;
+    height: 149px;
+    top: -50px;
+  }
+  
+  
+  .whoweare__photos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .whoweare__photos img{
+    width: 100%;
+    min-width: 450px;
+    max-width: 401px;
+    max-height: 300px;
+    object-fit: cover;
+    padding: 5px;
+    margin: 15px;
+  }
+  
+  
+  .whoweare__photos--marcela p {
+   
+   bottom: 15px;
+   left: 15px;
+   font-size: 25px;
+  }
+  .whoweare__photos--filip p {
+   
+   bottom: 15px;
+   left: 15px;
+   font-size: 25px;
+  }
+  
+  
+  .whoweare__heading h3:after {
+    display: block;
+    position: absolute;
+    background-color: $button;
+    width: 385px;
+    height: 6px;
+    content: "";
+    margin-top: 10px;
+   left: -45px;
+  }
+  
+  
+  .services__main {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: left;
+    }
+  
+  
+  .services__left img {
+    text-align: center;
+    padding-left: 65px;
+    padding-top: 40px;
+  }
+  
+  
+  .services__right--list {
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-top: 0;
+  }
+  
+  .services__heading p {
+    margin-bottom: 0;
+  }
+  
+  .services__heading {
+    margin-top: 20px;
+  }
+  
+  .services__button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    bottom: 35%;
+  
+  }
+  
+  .services__right--list {
+    padding-top: 5px;
+    }
+  
+  
+  .destinations {
+    padding-left: 40px;
+    padding-right: 45px;
+    display: flex;
+    background-color: $background;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  
+  
+  .destinations__text {
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+  
+  .destinations__text p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 27px;
+  }
+  
+
+.destinations-rowone-second, .destinations-rowtwo-fourth {
+  padding-left: 0;
+}
+
+  
+  .destinations__button {
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .destinations--rowtwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  
+  .destinations--rowone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  .destinations-rowone-second, .destinations-rowtwo-fourth {
+    margin-left: 0px;
+  }
+
+
+
+
+
+
+
+
+    .golf__wrapping {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .golf__heading h3 {
+    margin-top: 0;
+  }
+  
+  .golf__heading p {
+    margin-bottom: 0;
+  }
+  
+    .golf__button {
+      margin-left:120px;
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+  
+
+    .golf--right {
+      display: block;
+    }
+
+
+      .golf--rowone--third, .golf--rowone--fourth {
+    margin-left: 0px;
+  }
+
+
+.golf--rowone--first, golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
+  display: block;
+}
+
+
+
+  .golf--rowone img, .golf--rowtwo img {
+    width: 400px;
+    object-fit: cover;
+  }
+
+
+}
+
 
 
 
