@@ -43,7 +43,7 @@ html {
   .wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 130px 50px 570px 800px 500px 650px 630px 350px 350px 25px;
+    grid-template-rows: 130px 50px 570px 800px 560px 650px 630px 350px 350px 25px;
     margin: 0 auto;
     font-family: $font-modern;
     font-size: $font-sansserif-size;
@@ -233,7 +233,7 @@ margin-left: 10px;
   color: $button;
 }
 
-@media screen and (min-width: 1001px){
+@media screen and (min-width: 1199px){
   
 
 .nav__about-us:hover:after {
@@ -340,6 +340,13 @@ border-radius: 5px;
   object-fit: cover;
 }
 
+
+.glide__bullets {
+  top: 650px;
+  position: absolute;
+}
+
+
 .header {
   width: 100%;
   position: relative;
@@ -411,12 +418,21 @@ border-radius: 29px;
 
 // NEWSLETTER
 
+
+
+@media screen and (min-width: 480px){
+  .newsletter {background-image: url("/logos/horizontal.png");
+
+  }
+
+}
+
+
 .newsletter {
   background-color: white;
   color: white;
   padding: 15px;
   position: relative;
-  background-image: url("/logos/horizontal.png");
   background-size: 100% 350px;
   background-position: center;
   z-index: 5;
@@ -2048,11 +2064,18 @@ position: relative;
 // SMALL SCREEN
 
 
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1199px) {
 
   .wrapper {
     grid-template-rows: 130px 50px 570px 1200px 650px 1150px 1000px 350px 350px 25px;
   }
+  
+  .glide__bullets {
+    top: 570px;
+    position: absolute;
+  }
+
+
 
   .top__dmc {
     position: absolute;
@@ -2148,7 +2171,6 @@ height: 600px;
 
 .header__main--text span {
   font-size: 18px;
-  font-weight: bold;
   }
 
 .newsletter-text p {
@@ -2296,9 +2318,9 @@ padding-left: 40px;
 }
 
 .destinations__button {
-  margin-left: 230px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+ display: table;
+ margin: auto;
+ padding-bottom: 30px;
 }
 
 
@@ -2579,9 +2601,10 @@ padding-left: 40px;
   
   
   .services__left img {
-    text-align: center;
-    padding-left: 65px;
-    padding-top: 40px;
+    display: table;
+    margin: auto;
+    padding-top: 30px;
+    width: 400px;
   }
   
   
@@ -2600,11 +2623,10 @@ padding-left: 40px;
   }
   
   .services__button {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 20%;
-    bottom: 35%;
+    display: table;
+    margin: auto;
+    position:unset;
+    padding-top: 20px;
   
   }
   
@@ -2641,9 +2663,12 @@ padding-left: 40px;
 
   
   .destinations__button {
-    margin-left: 70px;
+    margin-left: 0px;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: table;
+    margin: auto;
+    padding-bottom: 30px;
   }
   
   
@@ -2651,13 +2676,17 @@ padding-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
+    display: table;
+    margin: auto;
   }
   
   .destinations--rowone {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: table;
+    margin: auto;
   }
   
 
@@ -2686,14 +2715,18 @@ padding-left: 40px;
   }
   
     .golf__button {
-      margin-left:120px;
+      margin-left: 0px;
       margin-bottom: 30px;
+      padding-bottom: 30px;
       margin-top: 0;
+      display: table;
+  margin: auto;
     }
   
 
     .golf--right {
       display: block;
+      margin-left: 0 auto;
     }
 
 
@@ -2702,8 +2735,9 @@ padding-left: 40px;
   }
 
 
-.golf--rowone--first, golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
-  display: block;
+.golf--rowone--first, .golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
+  display: table;
+  margin: auto;
 }
 
 
@@ -2728,7 +2762,7 @@ padding-left: 40px;
 
 
   .wrapper {
-    grid-template-rows: 300px 50px 400px 1250px 950px 1750px 1650px 350px 650px 25px;
+    grid-template-rows: 220px 50px 700px 1160px 1000px 1850px 1750px 260px 650px 25px;
   }
 
 
@@ -2739,8 +2773,8 @@ padding-left: 40px;
   justify-content: space-between;
   align-items: baseline;
   position: relative;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 55px;
+  padding-top: 5px;
 }
 
 
@@ -2751,13 +2785,13 @@ padding-left: 40px;
 
 .top__dmc {
   position: absolute;
-  top: 10%;
-  left: 57%;
+  top: 80%;
+  left: 3.5%;
 }
 
 
 .top__dmc img {
- width: 200px;
+ width: 180px;
 }
 
 
@@ -2821,44 +2855,35 @@ padding-left: 40px;
 
 .glide__bullets {
   position: absolute;
-  top: 670px;
+  top: 570px;
 }
 
 
 .glide__slide img {
   opacity: 0.8;
   z-index: -1;
-  max-width: 800px;
-  height: 700px;
+  max-width: 500px;
+  height: 600px;
   object-fit: cover;
 }
 
-
-.newsletter-text p {
-  padding-top: 30px;
-  font-size: 16px;
-  }
-  
-  
-  .newsletter-subscribe {
-  margin-top: 5px;
-  }
-  
-
+.header__main--text span {
+  font-size: 18px;
+}
 
   .header__main {
     background-color: rgba(255,255,255, 0.8);
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
     border-radius: 29px;
-    padding: 20px;
+    padding: 10px;
     display: block;
     text-align: center;
-    width: 450px;
+    width: 300px;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     color: black;
   }
@@ -2870,38 +2895,16 @@ padding-left: 40px;
     font-weight: normal;
     display: none;
   }
-  
-  
 
 
-.footer {
- 
-  margin-bottom: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-}
-
-  
-  .footer__logo_policy {
-  padding-top: 5px;
-  }
-  
-  
-  .footer__logo_policy-text {
-  margin-top: 80px;
-  }
-  
-  
-  .footer__contact--filip {
-  padding-left: 40px;
-  }
   
   .whoweare {
     margin-top: 0px;
-  
+    margin-left: 15px;
+  }
+
+  .whoweare__heading {
+    font-size: 24px;
   }
   
   .wedge_four {
@@ -2909,7 +2912,7 @@ padding-left: 40px;
     left: -30px;
     min-width: 1200px;
     height: 149px;
-    top: -50px;
+    top: -30px;
   }
   
   
@@ -2924,8 +2927,8 @@ padding-left: 40px;
   
   .whoweare__photos img{
     width: 100%;
-    min-width: 450px;
-    max-width: 401px;
+    // min-width: 450px;
+    max-width: 350px;
     max-height: 300px;
     object-fit: cover;
     padding: 5px;
@@ -2951,7 +2954,7 @@ padding-left: 40px;
     display: block;
     position: absolute;
     background-color: $button;
-    width: 385px;
+    width: 250px;
     height: 6px;
     content: "";
     margin-top: 10px;
@@ -2968,11 +2971,14 @@ padding-left: 40px;
   
   .services__left img {
     text-align: center;
-    padding-left: 65px;
-    padding-top: 40px;
+    // padding-left: 65px;
+    padding-top: 60px;
+    width: 300px;
   }
   
-  
+  .services__right {
+    margin-left: 40px;
+  }
   .services__right--list {
     padding-left: 20px;
     padding-top: 40px;
@@ -2983,16 +2989,37 @@ padding-left: 40px;
     margin-bottom: 0;
   }
   
+
+  .services__heading h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 150px;
+    position: absolute;
+    }
+  
+  .services__heading h3:after {
+    display: block;
+    position: absolute;
+    background-color: $button;
+    width: 202px;
+    height: 6px;
+    content: "";
+    margin-top: 10px;
+   right: -60px;
+  }
+
+
+
   .services__heading {
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: right;
   }
   
   .services__button {
-    display: flex;
-    justify-content: center;
     position: absolute;
     left: 20%;
-    bottom: 35%;
+    bottom: 29%;
   
   }
   
@@ -3002,24 +3029,50 @@ padding-left: 40px;
   
   
   .destinations {
-    padding-left: 40px;
-    padding-right: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     background-color: $background;
     position: relative;
     flex-direction: column-reverse;
   }
-  
-  
+
+ 
+
+.destinations__heading {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+    top: -40px;
+    right: 20px;
+    padding-top: 80px;
+  }
+
+
+  .destinations__heading:after {
+    display: block;
+    position: absolute;
+    background-color: $button;
+    width: 262px;
+    height: 6px;
+    content: "";
+    margin-top: 20px;
+   right: -45px;
+  }
+
+
+
   .destinations__text {
     padding-left: 25px;
-    padding-top: 20px;
+    padding-top: 0px;
   }
   
   .destinations__text p {
     font-size: 18px;
     font-weight: bold;
     padding-left: 27px;
+    padding-top: 20px;
   }
   
 
@@ -3029,7 +3082,7 @@ padding-left: 40px;
 
   
   .destinations__button {
-    margin-left: 70px;
+    margin-left: 52px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -3056,10 +3109,6 @@ padding-left: 40px;
 
 
 
-
-
-
-
     .golf__wrapping {
       display: flex;
       flex-direction: column;
@@ -3067,14 +3116,30 @@ padding-left: 40px;
   
   .golf__heading h3 {
     margin-top: 0;
+    font-size: 24px;
   }
   
   .golf__heading p {
     margin-bottom: 0;
   }
   
+
+
+  .golf__heading:after {
+    display: block;
+    position: absolute;
+    background-color: $button;
+    width: 110px;
+    height: 6px;
+    content: "";
+    margin-top: -20px;
+   left: -45px;
+  }
+
+
+
     .golf__button {
-      margin-left:120px;
+      margin-left:60px;
       margin-bottom: 30px;
       margin-top: 0;
     }
@@ -3082,6 +3147,7 @@ padding-left: 40px;
 
     .golf--right {
       display: block;
+      margin-left: 0;
     }
 
 
@@ -3090,19 +3156,94 @@ padding-left: 40px;
   }
 
 
-.golf--rowone--first, golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
+.golf--rowone--first, .golf--rowone--second, .golf--rowone--third, .golf--rowone--fourth {
   display: block;
 }
 
 
 
   .golf--rowone img, .golf--rowtwo img {
-    width: 400px;
+    width: 330px;
     object-fit: cover;
   }
 
 
+  .newsletter {
+    background-color: $primary;
+    color: white;
+    padding: 15px;
+    position: relative;
+    z-index: 5;
+  }
+
+
+  .newsletter-text p {
+    padding-top: 30px;
+    font-size: 16px;
+    }
+    
+    .newsletter-subscribe {
+    margin-top: 5px;
+    }
+
+
+.newsletter {
+  padding-top: 0;
+  padding-bottom: 0;
 }
+
+.newsletter-text h5:after {
+  display: block;
+  background-color: $button;
+  width: 158px;
+  height: 6px;
+  content: "";
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+}
+
+
+  
+  
+.footer {
+ padding-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+  
+  .footer__logo_policy {
+  padding-top: 5px;
+  padding-left: 60px;
+  }
+  
+ 
+  .footer__logo_policy-text {
+  margin-top: 80px;
+  }
+  
+  
+  .footer__contact--filip {
+  padding-left: 40px;
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+
 
 
 
