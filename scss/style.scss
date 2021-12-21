@@ -1149,6 +1149,12 @@ position: relative;
   color: $button;
 }
 
+.glide__bullets {
+  top: 470px;
+  position: absolute;
+}
+
+
 .glide__slides--a img, .glide__slides--b img, .glide__slides--c img, .glide__slides--d img, .glide__slides--e img {
   opacity: 0.8;
   // z-index: -1;
@@ -1867,8 +1873,8 @@ position: relative;
 
 
 .destinations__destinations--map--map-pa {
-  top: 200px;
-  left: -430px;
+  top: 180px;
+  left: -360px;
 }
 .destinations__destinations--map--map-pb {
   top: 320px;
